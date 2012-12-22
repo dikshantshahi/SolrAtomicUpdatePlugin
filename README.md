@@ -1,11 +1,11 @@
 SolrAtomicUpdatePlugin
 ======================
 
-Solr 4.0 Plugin which allows atomic update of lucene document more intuitively. The plugin supports update on the basis Solr query. Update of multiValued field is also supported.
+Solr 4.0 Plugin which allows atomic update of lucene document more intuitively. The plugin supports update on the basis of Solr query. Update of multiValued field is also supported.
 
 Internally Lucene doesn't allows you to update a document. The concept is simple delete and add.
 
-This plugin allows you to update a document. It internally does a delete and add, thus releaving the client application from doing the same.
+This plugin allows you to update a document. It internally does a query, fetch, delete and add, thus releaving the client application from doing the same.
 Another important feature of the plugin is that it allows you to perform SQL like update. It you are DB user, you will find this plugin more intuitive.
 The user can specify solr query which uniquely identifies a document to be updated.
 
